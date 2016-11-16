@@ -40,18 +40,7 @@ angular.module('chatroom').service('messageService', function($http){
   this.postCookie = function(newCookie) {
   	return $http({
   		method: 'POST',
-  		url: 'http://practiceapi.devmounta.in/api/cookies',
-  		data: {"cookies":
-  				{
-				    "Tasty Chocolate Chip Cookie":1,
-				    "Delicious Butter Pecan Cookie":1,
-				    "Delectable Fortune Cookie":1,
-				    "Delicious Macaroon Cookie":1,
-				    "Delectable Chocolate Chip Cookie":1,
-				    "Flavorful Butter Pecan Cookie":1,
-    				"Tasty Macaroon Cookie":1
-  				}
-			}
+  		url: 'http://practiceapi.devmounta.in/api/cookies'
   	})
   }
 
